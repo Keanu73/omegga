@@ -1,10 +1,10 @@
-const fs = require('fs');
-const path = require('path');
-require('colors');
+import fs from 'fs';
+import path from 'path';
+import 'colors';
 
-const pkg = require('../package');
-const soft = require('./softconfig.js');
-const Omegga = require('./omegga/server.js');
+import * as pkg from '../package.json';
+import * as soft from './softconfig';
+import { Omegga } from './omegga/server';
 const config = require('./config/index.js');
 const { Terminal, auth, config: omeggaConfig } = require('./cli/index.js');
 const file = require('./util/file.js');

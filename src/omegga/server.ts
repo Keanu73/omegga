@@ -50,7 +50,7 @@ const verboseLog = (...args) => {
     console.log('V>'.magenta, ...args);
 };
 
-class Omegga extends OmeggaWrapper {
+export class Omegga extends OmeggaWrapper {
   // pluginloader is not private so plugins can potentially add more formats
   pluginLoader = undefined;
 

@@ -1,5 +1,5 @@
-const path = require('path');
-const os = require('os');
+import * as path from 'path';
+import * as os from 'os';
 
 const PROJECT_NAME = 'omegga';
 const CONFIG_HOME = path.join(os.homedir(), '.config/' + PROJECT_NAME);
